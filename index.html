@@ -4,6 +4,8 @@
     <title>Angular 2 QuickStart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
@@ -18,9 +20,13 @@
     <script>
       System.config({
         packages: {
+          paths: {
+      		    'angular2-grid': 'node_modules/angular2-grid/dist/NgGrid.js'
+      	  },
           app: {
             format: 'register',
             defaultExtension: 'js'
+            
           }
         }
       });
